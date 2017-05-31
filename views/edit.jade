@@ -1,0 +1,11 @@
+extends layout
+     
+block content
+    section
+        form(action='/actualizar', method='post')
+            input(type='hidden', name='id', value=equipos.id)
+            label Nombre:
+            input(name='nombre', value=equipos.nombre)
+            label Ciudad:
+            input(name='ciudad', value=equipos.ciudad)
+            input(type='submit', value='Actualizar')

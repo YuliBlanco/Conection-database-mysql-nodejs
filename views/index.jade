@@ -1,0 +1,27 @@
+extends layout
+     
+block content
+    section
+        form(action='/nueva', method='post')
+            label Nombre:
+            input(name='nombre')
+            label Ciudad:
+            input(name='ciudad')
+            input(type='submit', value='Guardar')
+
+    section
+        if equipos.length == 0
+            p No existen equipos en la base de datos
+        else
+            table
+                tr
+                    th Nombre
+                    th Ciudad
+                    th
+                for Ciudad in equipos
+                    for Nombre in equipos
+                        tr
+                            td=Nombre.nombre
+                            td=Ciudad.ciudad
+                            td
+                            

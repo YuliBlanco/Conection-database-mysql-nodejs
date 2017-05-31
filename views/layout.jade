@@ -1,0 +1,20 @@
+
+doctype html
+html
+  head
+    title Universidades de España
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='http://code.jquery.com/jquery-3.2.1.min.js', integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=', crossorigin='anonymous')
+    link(href='https://fonts.googleapis.com/css?family=Roboto', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Lobster', rel='stylesheet')
+    script(src='https://use.fontawesome.com/c256711ea0.js')
+    link(href='https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css', rel='stylesheet')
+    script(src='//code.jquery.com/jquery-1.12.4.js')
+    script(src='https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js')
+    script.
+      $(document).ready(function() {
+      $('#example').DataTable();
+      } );
+  body
+    block content
